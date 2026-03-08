@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: "Roboto", sans-serif;
+background-color: #dfdfd8;
+}
+header {
+    background-color: #fafaf6;
+    height: 77px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    width: min(1120px );
+    margin: 0 auto;
+}
+.desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    
+    
+}
+.menus-link {
+    display: flex;
+    list-style: none;
+    /* text-align: center; */
+    margin-top: 20px;
+    text-decoration: none;
+    gap: 20px;
+}
+.menus-link li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #2b2b2b;
+    padding: 10px;
+}
+.menus-link li a:hover {
+    color: #5f6ad4;
+}
+.desktop-menu h1 {
+    font-size: 1.5625rem;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.hamburger {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+.mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #5f6ad4;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    
+}
+.btn-secondary {
+    background-color: #2b2b2b;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    
+}
+.hero {
+    height: calc(100vh - 77px);
+    background: url("https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-min-an-1234035.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.hero h1 {
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    
+}
+.btn {
+    padding: 15px 60px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #5f6ad4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+        background-color: #fafaf6;
+        color: black;
+    }
+    .yoga {
+        
+        background: url("https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-lucas-pezeta-2121066.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        margin-top: 6rem;
+        border-radius: 25px;
+        display: flex;
+        /* align-items: flex-end; */
+        justify-content: center;
+
+    }
+
+   .yoga .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 30px;
+   }
+  .yoga .content h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+.yoga .content p {
+    text-align: center;
+    color: white;
+}
+img {
+    width: 100%;
+}
+.info-boxs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-block: 6rem;
+  
+}
+.box img {
+    border-radius: 25px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+h2 {
+     font-size: 27px;
+    font-weight: 400;
+    color: rgb(43, 43, 43);
+}
+p {
+ font-size: 20px;
+    font-weight: 400;
+    color: rgb(128, 123, 123);
+}
+.box h2 {
+    font-size: 27px;
+    font-weight: 400;
+    color: rgb(43, 43, 43);
+}
+.box p {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(112, 111, 111);
+}
+.box button {
+    width: 45%;
+}
+
+ .perfect-condition {
+    height: 70vh;
+    background: linear-gradient(rgba(160, 156, 156, 0.2), rgba(146, 169, 211, 0.5)),url("https://plus.unsplash.com/premium_photo-1683133545768-44f5cca73afa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhY2tncm91bmQlMjBpbWFnZSUyMG9mJTIweW9nYXxlbnwwfHwwfHx8MA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    
+ }
+ .perfect-condition h2 {
+    color: black;
+    
+ }
+
+ .perfect-condition p {
+    color: #2b2b2b;
+ }
+
+.muuse {
+    height: 355.188px;
+    background: url("https://images.unsplash.com/photo-1599447292325-2cffaa79bcbb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJhY2tncm91bmQlMjBpbWFnZSUyMG9mJTIweW9nYXxlbnwwfHwwfHx8MA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding-block: 5rem;
+    margin-top: 5rem;
+}
+.yaxye {
+    border: 2px solid #5f6ad4;
+    border-radius: 1rem;
+    background-color: rgb(209, 207, 201);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    i {
+        z-index: 1111;
+    }
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        padding: 10px;
+        background-color: #5f6ad4;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    .desktop-menu {
+        display: none;
+    }
+    header {
+        height: 0;
+    }
+    .mobile-menu {
+        display: flex;
+        position: fixed;
+        inset: 0 0 0 0;
+        background-color: #2b2b2b;
+        justify-content: center;
+        transform: translateX(0%);
+        transition: transform 0.1s ease-in-out;
+    }
+    .mobile-menu[data-visible="false"] {
+        transform: translateX(100%);
+    }
+    .hamburger i[data-visible="true"] {
+        display: block;
+    }
+    .hamburger i[data-visible="false"] {
+        display: none;
+    }
+    .navigation h1 {
+        color: white;
+        border-bottom: 1px solid #ffffff;
+        width: 100%;
+        font-size: 37px;
+        font-weight: 700;
+        padding: 20px;
+    }
+    .navigation .menus-link a {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        
+    }
+    .mobile-menu .navigation .menus-link {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .mobile-menu .navigation {
+        margin-top: 100px;
+        
+    }
+    .mobile-menu-actions a {
+        color: white;
+    }
+    .hero {
+        /* height: 100%; */
+    }
+    .hero h1 {
+        font-size: 49px;
+    }
+     
+    .yoga .content h1 {
+        font-size: 2.125rem;
+    }
+    .yoga .content p {
+        padding: 1rem;
+        font-size: 1.3125rem;
+    }
+    .info-boxs {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .perfect-condition h2 {
+        font-size: 34px;
+        padding: 10px;
+    }
+    .perfect-condition p {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
