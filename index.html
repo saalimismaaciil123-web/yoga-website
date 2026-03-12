@@ -1,179 +1,1092 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="so">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-     * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-     }
-     body {
-     font-family: "Roboto", sans-serif;
-     background-color: #dfc7c7;
-     }
-     .container {
-        max-width: 1110px;
-        margin-inline: auto;
-        
-
-     }
-     .grid {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 1.0625px;
-     }
-     .top-item {
-        height: 30rem;
-        /* background-color: burlywood; */
-     }
-     .top1 h2 {
-       font-size: 3.5rem;
-       line-height: 5rem;
-       font-weight: 400;
-       
-     }
-     .top1 {
-        margin-top: 137px;
-     }
-     .top-item {
-        border-radius: 1rem;
-        /* margin-top: 10px; */
-        
-     }
-     .top1 p {
-        font-size: 1.63rem;
-        color: #252525;
-        margin-top: 4.5rem;
-     }
-     button {
-        background-color: #252525;
-        color: white;
-        padding: 1rem 2rem;
-        border: none;
-        border-radius: 1rem;
-        font-size: 1.13rem;
-        cursor: pointer;
-        margin: 5px;
-     }
-     button:hover{
-        background-color: rgb(74, 109, 139);
-     }
-     .top2 {
-        background: url(https://images.unsplash.com/photo-1613323593608-abc90fec84ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-top: 46px;
-     }
-     .top3 {
-        background: url(https://images.unsplash.com/photo-1714918726792-3bad2cccb597?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9yZXN0JTIwYW5kJTIwc2t5fGVufDB8fDB8fHww);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-top: 171px;
-     }
-     .bottom {
-        height: 27.50rem;
-        margin-top: 4.5rem;
-        gap: 10px;
-     }
-    
-     .sawir1 {
-        background: url(https://images.unsplash.com/photo-1639439079373-badbac81c5b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZvcmVzdCUyMGFuZCUyMHNreXxlbnwwfHwwfHx8MA%3D%3D);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;  
-        height: 100%;
-        border-radius: 1rem;
-        
-     }
-     .sawir2 {
-        background: url(https://images.unsplash.com/photo-1643286918679-dc71941c0c8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJpdmVyJTIwYW5kJTIwZm9yZXN0fGVufDB8fDB8fHww);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;  
-        height: 100%;
-        border-radius: 1rem;
-     }
-     .sawir3 {
-        background: url(https://plus.unsplash.com/premium_photo-1668456460190-ec6eabb39cf8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN1biUyMHJpc2V8ZW58MHx8MHx8fDA%3D);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;  
-        height: 100%;
-        border-radius: 1rem;
-     }
-    </style>
-
+    <title>Training Studio - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    /* Guud ahaan */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial Black', sans-serif;
+        /* Waxay u dhowdahay font-ka sawirka */
+    }
+
+    body {
+        /* background-color: #232d39; */
+    }
+
+    /* Header-ka dusha maraya */
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 30px 50px;
+        background: #232d39d8;
+        /* Hufnaan dhalada ah */
+        position: sticky;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .logo {
+        color: #fff;
+        font-size: 26px;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+
+    .logo span {
+        color: #ed563b;
+        /* Orange-ga rasmiga ah */
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+        color: #ed563b;
+    }
+
+    /* Button-ka Sign Up ee geeska */
+    .sign-up {
+        background-color: #ed563b;
+        padding: 10px 20px;
+        color: #fff !important;
+        border-radius: 0;
+        /* Template-ku ma laha wareeg */
+    }
+
+    /* Main Banner (Dhabarka dambe) */
+    .main-banner {
+        background-image: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/gym-video-poster.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        position: relative;
+    }
+
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(35, 45, 57, 0.8);
+        /* Madow hufan */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Qoraalka dhexda fadhiya */
+    .caption h6 {
+        color: #fff;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: 25px;
+        letter-spacing: 0.5px;
+    }
+
+    .caption h1 {
+        color: #fff;
+        font-size: 80px;
+        font-weight: 900;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    .caption h1 span {
+        color: #ed563b;
+    }
+
+    .main-banner video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* Button-ka Main-ka ah */
+    .main-button a {
+        display: inline-block;
+        background-color: #ed563b;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    .main-button a:hover {
+        background-color: #f9735b;
+    }
+
+    /* Wixii mobilada ah */
+    @media (max-width: 992px) {
+        .caption h1 {
+            font-size: 50px;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        /* Mobile menu ayaa loo baahan lahaa halkan */
+    }
+
+    /* Styling-ka Hamburger Icon-ka (Desktop ahaan waa qarsoon yahay) */
+    .menu-toggle {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu-toggle .bar {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    /* Choose Program Styling */
+    #features {
+        padding: 120px 0;
+        background-color: #fff;
+        color: #232d39;
+    }
+    .container {
+        width: 85%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        font-weight: 800;
+        color: #232d39;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .section-heading em {
+        font-style: normal;
+        color: #ed563b;
+    }
+
+    .section-heading img {
+        margin: 20px auto;
+        display: block;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+        color: #7a7a7a;
+    }
+
+    /* Grid-ka labada saf ah */
+    .features-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .feature-item {
+        width: 48%;
+        /* Labo saf ayay noqonayaan */
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    .left-icon img {
+        margin-right: 30px;
+        max-width: 90px;
+    }
+
+    .right-content h4 {
+        margin-top: 0px;
+        margin-bottom: 7px;
+        letter-spacing: 0.25px;
+        color: #232d39;
+        font-size: 19px;
+        text-align: left;
+        font-weight: 700;
+    }
+
+    .right-content p {
+        font-size: 14px;
+        color: #7a7a7a;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .right-content a.text-button {
+        text-decoration: none;
+        color: #ed563b;
+        font-size: 13px;
+        font-weight: 700;
+        text-align: left;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+
+    .right-content a.text-button:hover {
+        color: #f9735b;
+    }
+
+    .about {
+        margin-top: 10px;
+        background-color: #fff;
+        color: #232d39;
+    }
+
+    .dhex {
+        padding: 120px 0;
+        background-image: url(/ahmed/images/cta-bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 400px;
+        text-align: center;
+        color: #fff;
+    }
+
+    /* Overlay madow si qoraalku u dhalaalo */
+    .dhex::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(35, 45, 57, 0.8);
+        /* Midab madow oo hufan */
+        z-index: 1;
+    }
+
+    .dhex-content {
+        position: relative;
+        z-index: 2;
+        /* Inuu overlay-ga ka sarreeyo */
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .dhex-content h2 {
+        font-size: 36px;
+        font-weight: 800;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .dhex-content h2 em {
+        font-style: normal;
+        color: #ed563b;
+        /* Midabka orange-ka ah */
+    }
+
+    .dhex-content p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 35px;
+        color: #fff;
+    }
+
+    /* Button-ka Orange-ka ah */
+    .dhex-content .main-button a {
+        display: inline-block;
+        font-size: 15px;
+        padding: 12px 28px;
+        background-color: #ed563b;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: 0.25px;
+        transition: all 0.3s;
+    }
+
+    .dhex-content .main-button a:hover {
+        background-color: #f9735b;
+    }
+
+    .our {
+        padding: 80px 10%;
+        text-align: center;
+        background: #fff;
+    }
+
+    .our h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .our h1 span {
+        color: #ed563b;
+    }
+
+    .our p {
+        max-width: 600px;
+        margin: 15px auto 50px;
+        color: #777;
+        line-height: 1.6;
+    }
+
+    .classes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin: 20px 10%;
+        gap: 40px;
+    }
+    .training {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        border: none;
+        height: 70px;
+        padding: 45px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .seccond {
+        margin-top: 30px;
+    }
+
+    .guud {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .schedule-section {
+        background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1500') no-repeat center center/cover;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .overlay {
+        background: rgba(18, 27, 38, 0.9);
+        width: 100%;
+        min-height: 100vh;
+        padding: 80px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 1120px;
+        margin-inline: auto;
+        text-align: center;
+        color: white;
+    }
+
+    .header h2 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .header h2 span {
+        color: #ed563b;
+    }
+
+    .underline {
+        color: #ed563b;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+
+    .header p {
+        font-size: 14px;
+        color: #bdc3c7;
+        line-height: 1.6;
+        margin-bottom: 40px;
+    }
+
+
+    .days-filter {
+        margin-bottom: 30px;
+        font-size: 15px;
+        color: #bdc3c7;
+    }
+
+    .days-filter span {
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+    .days-filter span.active {
+        color: #ed563b;
+    }
+
+    .schedule-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .schedule-table td {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 25px;
+        font-size: 14px;
+        width: 25%;
+        height: 80px;
+    }
+
+    .schedule-table td:empty {
+        background: transparent;
+    }
+
+    .schedule-table td:not(:empty) {
+        color: #ffffff;
+    }
+    .axmed {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.card {
+    background: #fff;
+    width: 320px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.image-box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.role {
+    color: #ff5e3a; 
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.name {
+    color: #2c3e50;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+
+.description {
+    color: #7f8c8d;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff5e3a;
+}
+.contact-container {
+    display: flex;
+    height: 100vh; 
+    width: 100%;
+    margin-top: 200px;
+}
+
+
+.map-container {
+    flex: 1; 
+    background-color: #ddd;
+}
+
+
+.form-container {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: url(/ahmed/images/contact-bg.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+textarea {
+    resize: none;
+}
+
+.send-btn {
+    background-color: #e85a3d; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.send-btn:hover {
+    background-color: #cf4e33;
+}
+
+footer {
+    padding: 30px 0; /* Booska sare iyo hoos ka xiraya */
+    background-color: #fdfdfd; /* Midabka madowga dhumucda leh */
+    text-align: center;
+    color: #333;
+}
+
+footer p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+footer p a {
+    color: #ed563b; /* Midabka Orange-ka ee Template-ka */
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+footer p a:hover {
+    color: #f9735b; /* Marka mouse-ka la mariyo wuu yara dhalaalayaa */
+}
+
+/* Wixii mobilada ah si uu qoraalku u yaraado */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .map-container {
+        height: 300px;
+    }
+}
+
+    /* Responsive: Mobile-ka */
+    @media (max-width: 768px) {
+        .dhex-content h2 {
+            font-size: 28px;
+        }
+
+        .dhex-section {
+            padding: 80px 20px;
+        }
+    }
+
+
+    @media (max-width: 992px) {
+        .feature-item {
+            width: 100%;
+        }
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 992px) {
+        header {
+            padding: 20px 30px;
+        }
+
+        .menu-toggle {
+            display: flex;
+            /* Halkan ayuu ka soo muuqanayaa mobile-ka */
+        }
+
+        .nav-links {
+            position: absolute;
+            top: 80px;
+            left: -100%;
+            /* Bilowga waa qarsoon yahay */
+            flex-direction: column;
+            background-color: rgba(35, 45, 57, 0.95);
+            width: 100%;
+            text-align: center;
+            transition: 0.5s;
+            padding: 20px 0;
+            display: flex;
+            /* Ka saar 'display: none' ee aad hore u haysatay */
+        }
+
+        /* Marka la riixo menu-ka wuu soo baxayaa */
+        .nav-links.active {
+            left: 0;
+        }
+
+        .nav-links li {
+            margin: 15px 0;
+        }
+
+        .caption h1 {
+            font-size: 40px;
+        }
+    }
+</style>
+
 <body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                TRAINING <span>STUDIO</span>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#">CLASSES</a></li>
+                <li><a href="#">SCHEDULES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#" class="sign-up">SIGN UP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-banner">
+        <div class="video-overlay">
+            <div class="vidoe">
+                <video class="bg-video" autoplay muted loop playsinline>
+                    <source src="/assets/images/gym-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="caption">
+                <h6>WORK HARDER, GET STRONGER</h6>
+                <h1>EASY WITH OUR <span>GYM</span></h1>
+                <div class="main-button">
+                    <a href="#">BECOME A MEMBER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="our">
+                    <h1 style="color: black;">Choose<span> Program</span></h1>
+                    <img src="/ahmed/images/line-dec.png" alt="image">
+                    <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use this
+                        layout for
+                        your business website.</p>
+                </div>
+                <div class="features-items">
+                    <div class="feature-item">
+                        <div class="left-icon">
+                            <img src="/assets/images/features-first-icon.png" alt="training icon">
+                        </div>
+                        <div class="right-content">
+                            <h4>Basic Fitness</h4>
+                            <p>Please do not re-distribute this template ZIP file on any template collection website.
+                                This is not allowed.</p>
+                            <a href="#" class="text-button">DISCOVER MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="left-icon">
+                            <img src="/assets/images/features-first-icon.png" alt="training icon">
+                        </div>
+                        <div class="right-content">
+                            <h4>Advanced Muscle Course</h4>
+                            <p>You may want to browse through <a href="#">Digital Marketing</a> or <a
+                                    href="#">Corporate</a> templates on our website.</p>
+                            <a href="#" class="text-button">DISCOVER MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="left-icon">
+                            <img src="/assets/images/features-first-icon.png" alt="training icon">
+                        </div>
+                        <div class="right-content">
+                            <h4>New Gym Training</h4>
+                            <p>If you wish to support TemplateMo, please make a small contribution via PayPal or any
+                                other way.</p>
+                            <a href="#" class="text-button">DISCOVER MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="left-icon">
+                            <img src="/assets/images/features-first-icon.png" alt="training icon">
+                        </div>
+                        <div class="right-content">
+                            <h4>Yoga Training</h4>
+                            <p>This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the layout for
+                                any kind of website.</p>
+                            <a href="#" class="text-button">DISCOVER MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="left-icon">
+                            <img src="/assets/images/features-first-icon.png" alt="training icon">
+                        </div>
+                        <div class="right-content">
+                            <h4>Basic Muscle Course</h4>
+                            <p>Credit goes to <a href="#">Pexels</a> website for high quality images and video
+                                backgrounds used in this layout.</p>
+                            <a href="#" class="text-button">DISCOVER MORE</a>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="left-icon">
+                            <img src="/assets/images/features-first-icon.png" alt="training icon">
+                        </div>
+                        <div class="right-content">
+                            <h4>Body Building Course</h4>
+                            <p>Suspendisse fringilla qulla hulla nec hulla, vel efficitur leo tincidunt nec. Sed
+                                vulputate nisl sit amet.</p>
+                            <a href="#" class="text-button">DISCOVER MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dhex">
+        <div class="container">
+            <div class="dhex-content">
+                <h2>DON’T <em>THINK</em>, BEGIN <em>TODAY</em>!</h2>
+                <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio
+                    augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
+                <div class="main-button">
+                    <a href="#">BECOME A MEMBER</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="classess">
+        <div class="our">
+            <h1>Choose<span> Program</span></h1>
+            <img src="/ahmed/images/line-dec.png" alt="image">
+            <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use this layout for
+                your business website.</p>
+        </div>
+
+        <div class="classes">
+            <div class="guud">
+                <div class="training">
+                    <div class="first">
+                        <img src="/assets/images/tabs-first-icon.png" height="30px" alt="image">
+                    </div>
+                    <div class="seccond">
+                        <p>First Traing Class</p>
+                    </div>
+                </div>
+                <div class="training">
+                    <div class="first">
+                        <img src="/assets/images/tabs-first-icon.png" height="30px" alt="image">
+                    </div>
+                    <div class="seccond">
+                        <p>First Traing Class</p>
+                    </div>
+                </div>
+                <div class="training">
+                    <div class="first">
+                        <img src="/assets/images/tabs-first-icon.png" height="30px" alt="image">
+                    </div>
+                    <div class="seccond">
+                        <p>First Traing Class</p>
+                    </div>
+                </div>
+                <div class="training">
+                    <div class="first">
+                        <img src="/assets/images/tabs-first-icon.png" height="30px" alt="image">
+                    </div>
+                    <div class="seccond">
+                        <p>First Traing Class</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sawir">
+                <img src="assets/images/training-image-01.jpg" alt="image">
+                <h2>First Training Class</h2>
+                <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed
+                    suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida
+                    aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <section class="schedule-section">
+            <div class="overlay">
+                <div class="container">
+                    <div class="header">
+                        <h2>CLASSES <span>SCHEDULE</span></h2>
+                        <img src="" alt="image">
+                        <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use
+                            this layout foryour business website.</p>
+                    </div>
+
+                    <div class="days-filter">
+                        <span class="active">Monday</span> / <span>Tuesday</span> / <span>Wednesday</span> /
+                        <span>Thursday</span> / <span>Friday</span>
+                    </div>
+
+                    <table class="schedule-table">
+                        <tbody>
+                            <tr>
+                                <td>Fitness Class</td>
+                                <td>10:00AM - 11:30AM</td>
+                                <td></td>
+                                <td>William G. Stewart</td>
+                            </tr>
+                            <tr>
+                                <td>Muscle Training</td>
+                                <td></td>
+                                <td></td>
+                                <td>Paul D. Newman</td>
+                            </tr>
+                            <tr>
+                                <td>Body Building</td>
+                                <td></td>
+                                <td>2:00PM - 3:30PM</td>
+                                <td>Boyd C. Harris</td>
+                            </tr>
+                            <tr>
+                                <td>Yoga Training Class</td>
+                                <td></td>
+                                <td></td>
+                                <td>Hector T. Daigle</td>
+                            </tr>
+                            <tr>
+                                <td>Advanced Training</td>
+                                <td></td>
+                                <td></td>
+                                <td>Bret D. Bowers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+<section class="exercise">
+<div class="our">
+                    <h1>Choose<span> Program</span></h1>
+                    <img src="" alt="image">
+                    <p>Training Studio is free CSS template for gyms and fitness centers. You are allowed to use this
+                        layout for
+                        your business website.</p>
+                </div>
+
+                <div class="axmed">
+        <div class="card">
+            <div class="image-box">
+                <img src="assets/images/second-trainer.jpg" alt="Strength Trainer">
+            </div>
+            <div class="content">
+                <span class="role">Strength Trainer</span>
+                <h2 class="name">Bret D. Bowers</h2>
+                <p class="description">
+                    Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-box">
+                <img src="assets/images/third-trainer.jpg" alt="Muscle Trainer">
+            </div>
+            <div class="content">
+                <span class="role">Muscle Trainer</span>
+                <h2 class="name">Hector T. Daigl</h2>
+                <p class="description">
+                    Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">
+                <img src="first-trainer.jpg"Power Trainer">
+            </div>
+            <div class="content">
+                <span class="role">Power Trainer</span>
+                <h2 class="name">Paul D. Newman</h2>
+                <p class="description">
+                    Bitters cliche tattooed 8-bit distillery mustache. Keytar succulents gluten-free vegan church-key pour-over seitan flannel.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    <section   class="contact-container" id="contact">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.697924294438!2d-43.3674681!3d-23.0044566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd69562772591%3A0x691776513470120!2sAv.%20L%C3%BAcio%20Costa%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%20Brazil!5e0!3m2!1sen!2sso!4v1700000000000" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <div class="form-container">
+        <form class="contact-form">
+            <div class="input-group">
+                <input type="text" placeholder="Your Name*" required>
+                <input type="email" placeholder="Your Email*" required>
+            </div>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Message" rows="6"></textarea>
+            <button type="submit" class="send-btn">SEND MESSAGE</button>
+        </form>
+    </div>
+</section>
+<footer>
     <div class="container">
-
-        <div class="grid top">
-
-
-          <div class="top-item top1">
-           <h2>Discover the beauty around the world</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu.</p>
-           <button>get started</button>
-          </div>
-
-         <div class="top-item top2">
-          
-         </div>
-
-      <div class="top-item top3">
-
-      </div>
-
-
-        </div>
-
-<div class="grid bottom">
-    <div class="bottom-item">
-        <span>01</span>
-        <div class="sawir1">
-
+        <div class="footer-content">
+            <p>Copyright &copy; 2026 Ahmed ismail</p>
         </div>
     </div>
-    <div class="bottom-item">
-        <span>01</span>
-        <div class="sawir2">
+</footer>
 
-        </div>
-    </div>
-    <div class="bottom-item">
-        <span>01</span>
-        <div class="sawir3">
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
 
-        </div>
-    </div>
-</div>
-  
-
-
-    </div>
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active'); // Animation haddaad rabto
+            menuLinks.classList.toggle('active'); // Tani waxay furaysaa menu-ka
+        });
+    </script>
 </body>
+
 </html>
-
-
-
-<h1>font awesome</h1>
-<i class="fa-solid fa-music"></i>
-<i class="fa-solid fa-volume-low"></i>
-<i class="fa-solid fa-volume-high"></i>
-<i class="fa-solid fa-music"></i>
-<i class="fa-brands fa-youtube"></i>
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-tiktok"></i>
-<i class="fa-brands fa-opera"></i>
-<i class="fa-brands fa-chrome"></i>
-<i class="fa-brands fa-calculator"></i>
-<i class="fa-brands fa-telegram"></i>
-<i class="fa-brands fa-discord"></i>
-<i class="fa-brands fa-whatsapp"></i>
